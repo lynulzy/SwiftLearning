@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="so3-Hb-T8l" customClass="CusDetailHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnh-58-NQW">
+                    <rect key="frame" x="21" y="47" width="153" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgi-wx-QXY">
+                    <rect key="frame" x="207" y="22" width="40" height="32"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="m5L-kp-yd8"/>
+                        <constraint firstAttribute="width" constant="40" id="qAX-ou-lGN"/>
+                    </constraints>
+                    <state key="normal" image="短信.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="m5L-kp-yd8"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="sendMsgAction:" destination="so3-Hb-T8l" eventType="touchUpInside" id="GHB-Yf-qby"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FZ-rq-ln5">
+                    <rect key="frame" x="266" y="22" width="40" height="32"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="VFC-CD-jUw"/>
+                        <constraint firstAttribute="width" constant="40" id="lGB-cT-8cl"/>
+                    </constraints>
+                    <state key="normal" image="电话.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="VFC-CD-jUw"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="phoneAction:" destination="so3-Hb-T8l" eventType="touchUpInside" id="6Ux-vm-uRn"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9G2-aM-xeE">
+                    <rect key="frame" x="21" y="12" width="153" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8FZ-rq-ln5" secondAttribute="bottom" constant="22" id="C1C-kq-owV"/>
+                <constraint firstAttribute="trailing" secondItem="8FZ-rq-ln5" secondAttribute="trailing" constant="14" id="CsM-W8-LeA"/>
+                <constraint firstItem="Dgi-wx-QXY" firstAttribute="top" secondItem="so3-Hb-T8l" secondAttribute="top" constant="22" id="HqD-0I-Fpj"/>
+                <constraint firstAttribute="trailing" secondItem="Dgi-wx-QXY" secondAttribute="trailing" constant="73" id="JEg-GH-XqT"/>
+                <constraint firstAttribute="trailing" secondItem="Dgi-wx-QXY" secondAttribute="trailing" constant="73" id="JHa-R0-CpM"/>
+                <constraint firstItem="Dgi-wx-QXY" firstAttribute="top" secondItem="so3-Hb-T8l" secondAttribute="top" constant="26" id="JTt-bR-IXK"/>
+                <constraint firstAttribute="bottom" secondItem="8FZ-rq-ln5" secondAttribute="bottom" constant="20" id="MyE-90-uuI"/>
+                <constraint firstItem="8FZ-rq-ln5" firstAttribute="leading" secondItem="Dgi-wx-QXY" secondAttribute="trailing" constant="19" id="Ocd-7u-c8V"/>
+                <constraint firstAttribute="bottom" secondItem="Dgi-wx-QXY" secondAttribute="bottom" constant="20" id="UMb-4m-jT3"/>
+                <constraint firstItem="8FZ-rq-ln5" firstAttribute="top" secondItem="so3-Hb-T8l" secondAttribute="top" constant="22" id="YjO-oj-E5m"/>
+                <constraint firstAttribute="trailing" secondItem="8FZ-rq-ln5" secondAttribute="trailing" constant="14" id="cG0-rM-Fce"/>
+                <constraint firstItem="8FZ-rq-ln5" firstAttribute="top" secondItem="so3-Hb-T8l" secondAttribute="top" constant="26" id="gr9-iz-XqI"/>
+                <constraint firstAttribute="bottom" secondItem="Dgi-wx-QXY" secondAttribute="bottom" constant="22" id="nXd-5u-IBr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="JEg-GH-XqT"/>
+                    <exclude reference="JTt-bR-IXK"/>
+                    <exclude reference="UMb-4m-jT3"/>
+                    <exclude reference="MyE-90-uuI"/>
+                    <exclude reference="Ocd-7u-c8V"/>
+                    <exclude reference="cG0-rM-Fce"/>
+                    <exclude reference="gr9-iz-XqI"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="nameLabel" destination="9G2-aM-xeE" id="DwB-6x-8RU"/>
+                <outlet property="phoneLabel" destination="jnh-58-NQW" id="qID-5f-Hug"/>
+            </connections>
+            <point key="canvasLocation" x="457" y="64"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="电话.png" width="20" height="16"/>
+        <image name="短信.png" width="20" height="15"/>
+    </resources>
+</document>

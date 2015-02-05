@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>排行榜</string>
+			<key>image</key>
+			<string>mine_rank.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>我的消息</string>
+			<key>image</key>
+			<string>mine_news.png</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>myinfo_feedback.png</string>
+			<key>title</key>
+			<string>用户反馈</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>mine_clean.png</string>
+			<key>title</key>
+			<string>清空缓存</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>image</key>
+			<string>mine_upgrade.png</string>
+			<key>title</key>
+			<string>版本更新与帮助</string>
+		</dict>
+	</array>
+</array>
+</plist>

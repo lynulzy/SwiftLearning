@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F7DD22F5-A13F-45A6-A6F2-7BC72F8E8B70</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HouseMananger</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>74336d74-a8b4-0b4a-9ecf-f6605655fa54++5194</key>
+		<string>svn://122.11.46.230/mobile/House/iPhone/Development/HouseMananger</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HouseMananger.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>74336d74-a8b4-0b4a-9ecf-f6605655fa54++5194</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>74336d74-a8b4-0b4a-9ecf-f6605655fa54++5194</key>
+		<string>svn://122.11.46.230/mobile</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://122.11.46.230/mobile/House/iPhone/Development/HouseMananger/HouseMananger.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>74336d74-a8b4-0b4a-9ecf-f6605655fa54++5194</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>74336d74-a8b4-0b4a-9ecf-f6605655fa54++5194</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HouseMananger</string>
+		</dict>
+	</array>
+</dict>
+</plist>
