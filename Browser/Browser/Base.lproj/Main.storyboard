@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Rg1-Yp-PmZ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Browser" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cD6-1q-bnt">
+                                <rect key="frame" x="16" y="492" width="568" height="44"/>
+                                <items>
+                                    <barButtonItem title="&lt;" id="b6w-c1-gWJ">
+                                        <connections>
+                                            <action selector="back:" destination="vXZ-lx-hvc" id="1q8-kA-l1N"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="jhA-PG-6Tm"/>
+                                    <barButtonItem title="&gt;" id="iGL-Lw-FJg">
+                                        <connections>
+                                            <action selector="forward:" destination="vXZ-lx-hvc" id="Vmh-Rz-r5h"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="VlY-gX-VDb"/>
+                                    <barButtonItem title="R" id="xDk-iX-jJR">
+                                        <connections>
+                                            <action selector="refresh:" destination="vXZ-lx-hvc" id="lAT-kP-89X"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5O8-Kj-c4Z">
+                                <rect key="frame" x="-4" y="0.0" width="608" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5O8-Kj-c4Z" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-20" id="2sU-3N-amk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5O8-Kj-c4Z" secondAttribute="trailing" constant="-20" id="5sB-Ve-qYz"/>
+                            <constraint firstItem="cD6-1q-bnt" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="cnd-Q2-hwm"/>
+                            <constraint firstItem="5O8-Kj-c4Z" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="lwh-eH-Qou"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cD6-1q-bnt" secondAttribute="bottom" id="tWv-qI-L6c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cD6-1q-bnt" secondAttribute="trailing" id="vTJ-C5-Sn9"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="Hsu-ak-mhv">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="JFe-0N-oOi">
+                            <rect key="frame" x="180" y="6" width="240" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="idU-OO-FBX">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="33"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="240" id="0q5-Yp-wCk"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="URL" returnKeyType="go"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="vXZ-lx-hvc" id="SFr-lN-hTh"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="idU-OO-FBX" firstAttribute="top" secondItem="JFe-0N-oOi" secondAttribute="top" id="LMG-7O-8as"/>
+                                <constraint firstAttribute="bottom" secondItem="idU-OO-FBX" secondAttribute="bottom" id="Qdw-m2-dsw"/>
+                                <constraint firstItem="idU-OO-FBX" firstAttribute="leading" secondItem="JFe-0N-oOi" secondAttribute="leading" id="SgH-4Q-ZDl"/>
+                                <constraint firstAttribute="trailing" secondItem="idU-OO-FBX" secondAttribute="trailing" id="dgT-fI-pAb"/>
+                            </constraints>
+                        </view>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backButton" destination="b6w-c1-gWJ" id="2yH-9W-V1x"/>
+                        <outlet property="barView" destination="JFe-0N-oOi" id="5mG-c3-6Z9"/>
+                        <outlet property="forwardButton" destination="iGL-Lw-FJg" id="9PX-1S-Hzy"/>
+                        <outlet property="progressView" destination="5O8-Kj-c4Z" id="OjT-uL-f9L"/>
+                        <outlet property="refreshButton" destination="xDk-iX-jJR" id="q92-Z8-JKm"/>
+                        <outlet property="urlField" destination="idU-OO-FBX" id="H8Z-qG-9fK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="413"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DBX-gj-L2r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rg1-Yp-PmZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i7r-8g-gqk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="jWY-mc-czI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PG7-Up-6CS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="413"/>
+        </scene>
+    </scenes>
+</document>
